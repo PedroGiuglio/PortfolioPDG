@@ -1,0 +1,396 @@
+
+<body>
+    <header [ngClass]="{'scrolled': isScrolled}">
+        <nav>
+            <div class="tagname">
+                <h6>Pedro Giuglio</h6>
+            </div>
+            <div class="headerSections" [ngClass]="{'scrolled': isScrolled}">
+                <a href="#">Home</a>
+                <a href="#">Sobre mí</a>
+                <a href="#">Skills</a>
+                <a href="#">Experiencia</a>
+                <a href="#">Proyectos</a>
+            </div>
+            <div class="headerActions">
+                <div class="menuLenguages">
+                    <img src="https://i.postimg.cc/BnthtVtH/english.png">
+                    <img src="https://i.postimg.cc/vH0qYs8G/spanish.png">
+                </div>
+                <a href="" class="btn">
+                    Resume
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+                </a>
+            </div>
+        </nav>
+        </header>
+
+    <section class="section-home">
+        <div>
+        </div>
+        <div class="first">
+            <h1>Pedro David Giuglio</h1>
+            <h3>Fullstack developer</h3>
+            <!-- <p>Desarrollador Frontend creativo y orientado al detalle, con un año y medio de experiencia como Angular developer
+                en el desarrollo de aplicaciones web.</p> -->
+                <div class="links">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M8 11l0 5" /><path d="M8 8l0 .01" /><path d="M12 16l0 -5" /><path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg>
+                    <svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+                    <svg  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+                </div>
+        </div>
+    </section>
+
+
+
+    <!-- <div class="section-buttons">
+        <section class="buttons">
+            <button class="btn btn-primary" (click)="downloadPdf()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
+                <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5z"/>
+              </svg>CV</button>
+            <button class="btn btn-primary" (click)="sendEmail()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-arrow-up" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"/>
+                <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016"/>
+              </svg>CONTACT ME</button>
+        </section>
+    </div> -->
+
+    <div class="app">
+        <section class="aboutMe">
+            <h2>Sobre mí </h2>
+            <p>Mi nombre es Pedro David Giuglio, argentino, actualmente viviendo en Quilmes, Buenos Aires. A mís 26 años, me encuentro cursando segundo año de la Tenictatura Universitaria en Programación Universitaria 
+               de la Universidad Nacional de Quilmes. Me apasiona la programación y la creatividad orientada a los detalles. Cuento con un año y medio de experiencia como Frontend developer en el desarrollo de aplicaciones web, destacandome en el uso
+                de tecnologías como Angular, JavaScript, TypeScript, CSS/SCSS. Además, poseo conocimientos y habilidades en el backend con C# en .NET y tanto SQL Server como Oracle en base de datos relacionales.
+            </p>
+        </section>
+        <section class="sectionContainer">
+            <div class="second">
+                <h2>habilidades </h2>
+                <p>En el front me dedico a la creación de interfaces de usuario responsive y funcionales
+                utilizando Angular y TypeScript. Realizo el desarrollo de servicios de integración fullstack mediante API Rest.</p>
+            </div>
+            <div class="pruebas">
+            <div class="logo-skill">
+                <div class="box-skill">
+                    <img src="/assets/images/js.png" alt="">
+                    <h5>JavaScript</h5>
+                </div>
+                <div class="box-skill">
+                    <img src="/assets/images/angular.png" alt="">
+                    <h5>Angular</h5>
+                </div>
+                <div class="box-skill">
+                <img src="/assets/images/ts.png" alt="">
+                <h5>Typescript</h5>
+                </div>
+                <div class="box-skill">
+                <img src="/assets/images/html.png" alt="">
+                <h5>HTML5</h5>
+                </div>
+                <div class="box-skill">
+                <img src="/assets/images/css.png" alt="">
+                <h5>CSS</h5>
+                </div>
+                <div class="box-skill">
+                <img src="/assets/images/net.png" alt="">
+                <h5>.NET</h5>
+                </div>
+                <div class="box-skill">
+                <img src="/assets/images/c.png" alt="">
+                <h5>C#</h5>
+                </div>
+                <div class="box-skill">
+                <img src="/assets/images/sql.png" alt="">
+                <h5>SQL</h5>
+                </div>
+                <div class="box-skill">
+                    <img src="/assets/images/git.png" alt="">
+                    <h5>GIT</h5>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="experienciaContainer">
+            <h2>experiencia profesional</h2>
+            <div class="experienciaMiniContainer">
+                <div class="experienciaDetails">
+                    <h3>Frontend Developer</h3>
+                    <h4>Municipalidad de Berazategui</h4>
+                    <p>Mayo 2023 - Actualidad</p>
+                </div>
+                <div class="experienciaInfo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ducimus nisi provident, nobis velit temporibus soluta aliquam eligendi cumque tempora pariatur commodi. Tenetur dolore voluptatibus laborum sunt, autem fuga repudiandae?</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="proyectosContainer">
+            <h2>proyectos</h2>
+            <div class="moduloProyecto">
+                <div class="pruebaImg">
+                    <!-- <img class="imgSpace" src="/assets/images/blood.jpg" alt="Contenido de la pantalla size desktop"> -->
+                </div>
+                <div class="infoProyecto">
+                    <div class="headProyecto">
+                    <h5>Finalizado</h5>
+                    <h4>Web reviews de películas</h4>
+                    </div>
+                    <div class="techProyecto">
+                        <div class="logoProyecto">
+                            <img src="/assets/images/angular.png" alt="">
+                            <img src="/assets/images/ts.png" alt="">
+                            <img src="/assets/images/js.png" alt="">
+                            <img src="/assets/images/html.png" alt="">
+                            <img src="/assets/images/css.png" alt="">
+                    </div>
+                    </div>
+                    <p>Web que permite redactar reseñas de películas y notas tipo blog. Proyecto realizado en Angular, .Net y SQL Server. BBDD adaptada en Firebase.</p>
+                    <div class="buttonProyecto">
+                        <button class="btn"><svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M503.691 189.836L327.687 37.851C312.281 24.546 288 35.347 288 56.015v80.053C127.371 137.907 0 170.1 0 322.326c0 61.441 39.581 122.309 83.333 154.132 13.653 9.931 33.111-2.533 28.077-18.631C66.066 312.814 132.917 274.316 288 272.085V360c0 20.7 24.3 31.453 39.687 18.164l176.004-152c11.071-9.562 11.086-26.753 0-36.328z"></path></svg><span><a href="https://www.google.com/" target="_blank">Live</a></span></button>
+                        <button class="btn"><svg  xmlns="http://www.w3.org/2000/svg"  width="1em"  height="1em"  viewBox="0 0 24 24"  fill="#ffffff"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" /></svg><span>Code</span></button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="moduloProyecto">
+                <div class="pruebaImgAir">
+                <!-- <img class="imgSpace" src="/assets/images/nike.png" alt="Contenido de la pantalla size desktop"> -->
+            </div>
+                <div class="infoProyecto">
+                    <div class="headProyecto">
+                    <h5>Finalizado</h5>
+                    <h4>Air Store E-commerce</h4>
+                    </div>
+                    <div class="techProyecto">
+                        <div class="logoProyecto">
+                            <img src="/assets/images/angular.png" alt="">
+                            <img src="/assets/images/ts.png" alt="">
+                            <img src="/assets/images/js.png" alt="">
+                            <img src="/assets/images/html.png" alt="">
+                            <img src="/assets/images/css.png" alt="">
+                    </div>
+                    </div>
+                    <p>Web que permite redactar reseñas de películas y notas tipo blog. Proyecto realizado en Angular, .Net y SQL Server. BBDD adaptada en Firebase.</p>
+                    <div class="buttonProyecto">
+                        <button class="btn"><svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M503.691 189.836L327.687 37.851C312.281 24.546 288 35.347 288 56.015v80.053C127.371 137.907 0 170.1 0 322.326c0 61.441 39.581 122.309 83.333 154.132 13.653 9.931 33.111-2.533 28.077-18.631C66.066 312.814 132.917 274.316 288 272.085V360c0 20.7 24.3 31.453 39.687 18.164l176.004-152c11.071-9.562 11.086-26.753 0-36.328z"></path></svg><span><a href="https://www.google.com/" target="_blank">Live</a></span></button>
+                        <button class="btn"><svg  xmlns="http://www.w3.org/2000/svg"  width="1em"  height="1em"  viewBox="0 0 24 24"  fill="#ffffff"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" /></svg><span>Code</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="moduloProyecto">
+                <img class="imgSpace" src="/assets/images/blood.png" alt="Contenido de la pantalla">
+                <div class="infoProyecto">
+                    <div class="headProyecto">
+                        <h5>Finalizado</h5>
+                        <h4>DonarSalva</h4>
+                    </div>
+                    <div class="techProyecto">
+                        <div class="logoProyecto">
+                            <img src="/assets/images/angular.png" alt="">
+                            <img src="/assets/images/ts.png" alt="">
+                            <img src="/assets/images/js.png" alt="">
+                            <img src="/assets/images/html.png" alt="">
+                            <img src="/assets/images/css.png" alt="">
+                    </div>
+                    </div>
+                    <p>Proyecto APIRest de PokeApi. Incluye barra de búsqueda de pokemones.</p>
+                    <div class="buttonProyecto">
+                        <button class="btn"><svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M503.691 189.836L327.687 37.851C312.281 24.546 288 35.347 288 56.015v80.053C127.371 137.907 0 170.1 0 322.326c0 61.441 39.581 122.309 83.333 154.132 13.653 9.931 33.111-2.533 28.077-18.631C66.066 312.814 132.917 274.316 288 272.085V360c0 20.7 24.3 31.453 39.687 18.164l176.004-152c11.071-9.562 11.086-26.753 0-36.328z"></path></svg><span>Live</span></button>
+                        <button class="btn"><svg  xmlns="http://www.w3.org/2000/svg"  width="1em"  height="1em"  viewBox="0 0 24 24"  fill="#ffffff"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" /></svg><span>Code</span></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="moduloProyecto">
+            <img class="imgSpace" src="https://i.postimg.cc/DwxLBPgD/nycpass-pc.png" alt="Contenido de la pantalla size desktop">
+                <div class="infoProyecto">
+                    <div class="headProyecto">
+                    <h5>Finalizado</h5>
+                    <h4>NEW YORK PASS - CLON</h4>
+                    </div>
+                    <div class="techProyecto">
+                        <div class="logoProyecto">
+                            <img src="/assets/images/js.png" alt="">
+                            <img src="/assets/images/html.png" alt="">
+                            <img src="/assets/images/sass.png" alt="">
+                    </div>
+                    </div>
+                    <p>Web estática clon de 'New York Pass'.</p>
+                    <div class="buttonProyecto">
+                        <button class="btn"><svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M503.691 189.836L327.687 37.851C312.281 24.546 288 35.347 288 56.015v80.053C127.371 137.907 0 170.1 0 322.326c0 61.441 39.581 122.309 83.333 154.132 13.653 9.931 33.111-2.533 28.077-18.631C66.066 312.814 132.917 274.316 288 272.085V360c0 20.7 24.3 31.453 39.687 18.164l176.004-152c11.071-9.562 11.086-26.753 0-36.328z"></path></svg><span><a href="https://www.google.com/" target="_blank">Live</a></span></button>
+                        <button class="btn"><svg  xmlns="http://www.w3.org/2000/svg"  width="1em"  height="1em"  viewBox="0 0 24 24"  fill="#ffffff"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" /></svg><span>Code</span></button>
+                    </div>
+                </div>
+            </div>
+     
+            <div class="moduloProyecto">
+                <img class="imgSpace" src="https://i.postimg.cc/wjny1Lk1/Front-Prueba-11-07-2024-11-29.png" alt="Contenido de la pantalla">
+                <div class="infoProyecto">
+                    <div class="headProyecto">
+                        <h5>Finalizado</h5>
+                        <h4>ToDo List</h4>
+                    </div>
+                    <div class="techProyecto">
+                        <div class="logoProyecto">
+                            <img src="/assets/images/angular.png" alt="">
+                            <img src="/assets/images/ts.png" alt="">
+                            <img src="/assets/images/js.png" alt="">
+                            <img src="/assets/images/html.png" alt="">
+                            <img src="/assets/images/css.png" alt="">
+                    </div>
+                    </div>
+                    <p>Web para listar tareas, permite ordenar según estado y categoría.</p>
+                    <div class="buttonProyecto">
+                        <button class="btn"><svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M503.691 189.836L327.687 37.851C312.281 24.546 288 35.347 288 56.015v80.053C127.371 137.907 0 170.1 0 322.326c0 61.441 39.581 122.309 83.333 154.132 13.653 9.931 33.111-2.533 28.077-18.631C66.066 312.814 132.917 274.316 288 272.085V360c0 20.7 24.3 31.453 39.687 18.164l176.004-152c11.071-9.562 11.086-26.753 0-36.328z"></path></svg><span><a href="https://www.google.com/" target="_blank">Live</a></span></button>
+                        <button class="btn"><svg  xmlns="http://www.w3.org/2000/svg"  width="1em"  height="1em"  viewBox="0 0 24 24"  fill="#ffffff"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" /></svg><span>Code</span></button>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="moduloProyecto">
+                <img class="imgSpace" src="/assets/images/pokeapi-pc.png" alt="Contenido de la pantalla">
+                <div class="infoProyecto">
+                    <div class="headProyecto">
+                        <h5>Finalizado</h5>
+                        <h4>PokeAPI</h4>
+                    </div>
+                    <div class="techProyecto">
+                        <div class="logoProyecto">
+                            <img src="/assets/images/angular.png" alt="">
+                            <img src="/assets/images/ts.png" alt="">
+                            <img src="/assets/images/js.png" alt="">
+                            <img src="/assets/images/html.png" alt="">
+                            <img src="/assets/images/css.png" alt="">
+                    </div>
+                    </div>
+                    <p>Proyecto APIRest de PokeApi. Incluye barra de búsqueda de pokemones.</p>
+                    <div class="buttonProyecto">
+                        <button class="btn"><svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M503.691 189.836L327.687 37.851C312.281 24.546 288 35.347 288 56.015v80.053C127.371 137.907 0 170.1 0 322.326c0 61.441 39.581 122.309 83.333 154.132 13.653 9.931 33.111-2.533 28.077-18.631C66.066 312.814 132.917 274.316 288 272.085V360c0 20.7 24.3 31.453 39.687 18.164l176.004-152c11.071-9.562 11.086-26.753 0-36.328z"></path></svg><span>Live</span></button>
+                        <button class="btn"><svg  xmlns="http://www.w3.org/2000/svg"  width="1em"  height="1em"  viewBox="0 0 24 24"  fill="#ffffff"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" /></svg><span>Code</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="moduloProyecto">
+                <div class="imgSpace"></div>
+                <div class="infoProyecto"></div>
+            </div>
+            <div class="moduloProyecto">
+                <div class="imgSpace"></div>
+                <div class="infoProyecto"></div>
+            </div>
+        </section>
+    </div>
+ 
+    <div class="proyectos">
+        <div class="section-proyectos">
+            <div class="boxInfo">
+                <h5>Web reviews de películas</h5>
+                <h4>Movie Guide</h4>
+                <p>Web que permite redactar reseñas de películas y notas tipo blog. Proyecto realizado en Angular, .Net y SQL Server. BBDD adaptada en Firebase.</p>
+                <a href="https://github.com/PedroGiuglio/MovieBlog">View Code -></a>
+                <a href="https://movieguidereview.netlify.app/home" class="link">Visit the App -></a>
+                <div class="moduleButtons">
+                    <button class="angular">Angular</button>
+                    <button class="typescript">Typescript</button>
+                    <button class="css">CSS</button>
+                    <button class="firebase">Firebase</button>
+                    <button class="net">.NET</button>
+                    <button class="sql">SQL Server</button>
+                </div>
+            </div>
+            <div class="sectionPantallas">
+                <div class="screens">
+                    <div class="monitor">
+                        <img class="pantalla" src="/assets/images/movies-pc.png" alt="Contenido de la pantalla size desktop">
+                    </div>
+                    <div class="celular">
+                        <img class="pantalla" src="/assets/images/movies-cel.png" alt="Contenido de la pantalla size celular">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="proyectos">
+    <div class="section-proyectos">
+        <div class="boxInfo">
+            <h5>Clon New York Pass</h5>
+            <h4>New York Pass Web</h4>
+            <p>Web estatica responsive clon de nyc pass.</p>
+            <a href="https://github.com/PedroGiuglio/Ny-Pass">View Code -></a>
+            <a href="https://pedrogiuglio.github.io/Ny-Pass/" class="link">Visit the App -></a>
+            <div class="moduleButtons">
+                <button class="html">Html</button>
+                <button class="javascript">JavaScript</button>
+                <button class="scss">SCSS</button>
+            </div>
+        </div>
+        <div class="sectionPantallas">
+            <div class="screens">
+                <div class="monitor">
+                    <img class="pantalla" src="/assets/images/prueba.png" alt="Contenido de la pantalla">
+                </div>
+                <div class="celular">
+                    <img class="pantalla" src="/assets/images/nycpass-cel.png" alt="Contenido de la pantalla">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="proyectos">
+    <div class="section-proyectos">
+        <div class="boxInfo">
+            <h5>App filtro tareas</h5>
+            <h4>To Do List</h4>
+            <p>App con lista de tareas.</p>
+            <a href="https://github.com/PedroGiuglio/ToDoListApp">View Code -></a>
+            <a href="https://apptodolistpdg.netlify.app/" class="link">Visit the App -></a>
+            <div class="moduleButtons">
+                <button class="angular">Angular</button>
+                <button class="typescript">Typescript</button>
+                <button class="css">CSS</button>
+            </div>
+        </div>
+        <div class="sectionPantallas">
+            <div class="screens">
+                <div class="monitor">
+                    <img class="pantalla" src="/assets/images/todolist-pc.png" alt="Contenido de la pantalla">
+                </div>
+                <div class="celular">
+                    <img class="pantalla" src="/assets/images/todolist-cel.png" alt="Contenido de la pantalla">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="proyectos">
+    <div class="section-proyectos">
+        <div class="boxInfo">
+            <h5>App guia Pokemon</h5>
+            <h4>PokeApi</h4>
+            <p>App confeccionada para consumir API del servicio PokeAPI.</p>
+            <a href="https://github.com/PedroGiuglio/PokeApi">View Code -></a>
+            <a href="https://pedrogiuglio.github.io/PokeApi/" class="link">Visit the App -></a>
+            <div class="moduleButtons">
+                <button class="angular">Angular</button>
+                <button class="typescript">Typescript</button>
+                <button class="css">CSS</button>
+            </div>
+        </div>
+        <div class="sectionPantallas">
+            <div class="screens">
+                <div class="monitor">
+                    <img class="pantalla" src="/assets/images/pokeapi-pc.png" alt="Contenido de la pantalla">
+                </div>
+                <div class="celular">
+                    <img class="pantalla" src="/assets/images/pokeapi-cel.png" alt="Contenido de la pantalla">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
